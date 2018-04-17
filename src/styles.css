@@ -1,0 +1,187 @@
+/* colors:
+
+#61892f Dark Green
+#86c232 Light Green
+#222629 Charcoal Grey
+#474b4f Medium Grey
+#6b6e70 Light Grey */
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 150px;
+  font-size: 14px;
+  color: white;
+  background-color: #222629;
+}
+
+/* Used bootstrap spacing utilities to remove the left and right padding from the parent .container-fluid in order to have footer and navbar extend to end of viewport */
+
+nav.navbar {
+  background-color: #86c232;
+}
+
+.avatar {
+  background-color: #86c232;
+}
+
+button.btn {
+  background-color: #86c232;
+  border-color: #61892f;
+  color: white;
+}
+
+button.btn:hover {
+  background-color: #61892f;
+  border-color: #86c232;
+}
+
+button.btn:focus {
+  box-shadow: 0 0 1rem 0.2rem #86c232;
+}
+
+a {
+  color: #86c232;
+}
+
+a:hover {
+  color: #61892f;
+  text-decoration: none;
+}
+
+.container {
+  padding: 0 15px;
+}
+
+.skill-container {
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  background-color: #474b4f;
+}
+
+.portfolio-card.card {
+  background-color: #474b4f;
+}
+
+.card {
+  background-color: #6b6e70;
+  border-color: ;
+}
+
+.card-subtitle {
+  color: white !important;
+}
+
+.job-details-container {
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  background-color: #474b4f;
+}
+
+.course-list-container {
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  background-color: #474b4f;
+}
+
+.course-button {
+  font-size: 0.8rem;
+}
+
+.list-group-item a {
+  text-decoration: none;
+  color: white;
+}
+
+#course-list .list-group-item {
+  background-color: #6b6e70;
+}
+
+#course-list .list-group-item:hover {
+  background-color: #61892f;
+  border-color: #86c232;
+}
+
+.list-group-item {
+  background-color: #474b4f;
+}
+
+.list-group-item.active {
+  background-color: #86c232;
+  border-color: #86c232;
+  box-shadow: 0 0 0.6rem #86c232;
+}
+
+.list-group-item:hover {
+  background-color: #61892f;
+  border-color: #86c232;
+  cursor: pointer;
+}
+
+.tab-content {
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  background-color: #6b6e70;
+}
+
+.media-body ul li {
+  font-size: 0.8rem;
+}
+
+.last-resume {
+  text-align: center !important;
+}
+
+.goodbye {
+  text-align: center !important;
+}
+
+footer {
+  background-color: #86c232;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  color: white;
+  padding: 20px 0;
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    font-size: 1.1rem;
+  }
+
+  .navbar-brand {
+    font-size: 2rem;
+  }
+
+  .avatar {
+    width: 300px;
+    height: 300px;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .course-list-header {
+    visibility: visible;
+  }
+
+  .questions {
+    text-align: center !important;
+  }
+
+  .portfolio-button {
+    display: none;
+  }
+
+  #portfolio {
+    display: block;
+  }
+
+  .course-button {
+    display: none;
+  }
+
+  #course-list {
+    display: block;
+  }
+}
