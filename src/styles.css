@@ -41,6 +41,8 @@ button.btn:hover {
 }
 
 button.btn:focus {
+  -webkit-box-shadow: 0 0 1rem 0.2rem #86c232;
+  -moz-box-shadow: 0 0 1rem 0.2rem #86c232;
   box-shadow: 0 0 1rem 0.2rem #86c232;
 }
 
@@ -103,19 +105,23 @@ a:hover {
   border-color: #86c232;
 }
 
-.list-group-item {
+a.list-group-item-action {
   background-color: #474b4f;
+  color: #fff;
 }
 
 .list-group-item.active {
   background-color: #86c232;
   border-color: #86c232;
+  -webkit-box-shadow: 0 0 0.6rem #86c232;
+  -moz-box-shadow: 0 0 0.6rem #86c232;
   box-shadow: 0 0 0.6rem #86c232;
 }
 
 .list-group-item:hover {
   background-color: #61892f;
   border-color: #86c232;
+  color: #fff;
   cursor: pointer;
 }
 
@@ -145,9 +151,18 @@ footer {
   padding: 20px 0;
 }
 
+footer a[href^='tel'] {
+  text-decoration: inherit;
+  color: inherit;
+}
+
 @media screen and (min-width: 768px) {
   body {
     font-size: 1.1rem;
+  }
+
+  .reap {
+    font-size: 0.9rem;
   }
 
   .navbar-brand {
